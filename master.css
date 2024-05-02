@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right , #cffafe , #22d3ee);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+h1{
+    font-size: 60px;
+    color: #ee0000;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 78px;
+    font-family: cursive;
+}
+#cont{
+    flex: 1;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.img1 , .img2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img1{
+    width: 250x;
+    display: none;
+}
+.img2{
+    width: 200px;
+}
+.yes{
+    width: 88px;
+    height: 28px;
+    background-color: #f8fafc;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    transition: 1s;
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+}
+.no{
+    width: 88px;
+    height: 28px;
+    background-color: #f8fafc;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    transition: .3s;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+}
+.yes:hover , .no:hover{
+    box-shadow: 5px 5px 3px rgba(0,0,0);
+    cursor: pointer;
+}
+@media screen and (min-width:250px)   and (max-width:900px){
+    .foot{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .yes{
+        position: fixed;
+    }
+    
+}
